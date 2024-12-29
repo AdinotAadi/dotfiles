@@ -52,5 +52,12 @@ cd ./auto-cpufreq/
 sudo ./auto-cpufreq-installer
 sudo auto-cpufreq --install
 
+# Install Google Chrome and Visual Studio Code
+cd ~/Downloads
+wget -O vscode-linux.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+wget -O google-chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo nala install ./google-chrome.deb ./vscode-linux.deb
+rm ./*deb
+
 # Reboot the system
 sudo reboot now
